@@ -14,7 +14,10 @@ def inspect(label,url):
  r=requests.get(url,headers=HEADERS,timeout=45);r.raise_for_status()
  soup=BeautifulSoup(r.text,'html.parser')
  print(f'[{label}] status={r.status_code} bytes={len(r.content)} content_type={r.headers.get("content-type")} title={soup.title.get_text(" ",strip=True) if soup.title else ""}')
- print(f'[{label}] tables={len(soup.find_all("table"))} trs={len(soup.find_all("tr"))} next_data={soup.find("script",id="__NEXT_DATA__") is not None} ref_tokens={len(re.findall(r"Ref:\\s*",soup.get_text(" ",strip=True),re.I))} round_tokens={len(re.findall(r"Rodada",soup.get_text(" ",strip=True),re.I))}')
+ text_all=soup.get_text(' ',strip=True)
+ ref_tokens=len(re.findall(r'Ref:\s*',text_all,re.I))
+ round_tokens=len(re.findall(r'Rodada',text_all,re.I))
+ print(f'[{label}] tables={len(soup.find_all("table"))} trs={len(soup.find_all("tr"))} next_data={soup.find("script",id="__NEXT_DATA__") is not None} ref_tokens={ref_tokens} round_tokens={round_tokens}')
  for i,t in enumerate(soup.find_all('table')):
   rows=[]
   for tr in t.find_all('tr'):
