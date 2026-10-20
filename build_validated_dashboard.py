@@ -1,8 +1,10 @@
 """Build the public dashboard only from the fully reconciled CBF collector output."""
 import csv
 import json
+import re
 import subprocess
 import sys
+import unicodedata
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -16,6 +18,16 @@ if not report_path.exists() or not fixtures_path.exists():
     raise SystemExit("FAIL-CLOSED: collector validation outputs are missing")
 report = json.loads(report_path.read_text(encoding="utf-8"))
 fixtures = json.loads(fixtures_path.read_text(encoding="utf-8"))
+def norm(name):
+    value = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    value = re.sub(r"[^a-z0-9]+", "", value)
+    aliases = {"atleticomineiro": "atleticomg", "atleticomg": "atleticomg",
+               "athleticoparanaense": "athleticopr", "athleticopr": "athleticopr",
+               "redbullbragantino": "rbbragantino", "rbbragantino": "rbbragantino",
+               "santosfc": "santos", "vascodagamasaf": "vasco", "vascodagama": "vasco",
+               "coritibasaf": "coritiba"}
+    return aliases.get(value, value)
+
 round_counts = Counter(int(m["round"]) for m in fixtures)
 keys = [(int(m["round"]), m["home"], m["away"]) for m in fixtures]
 checks = {
@@ -31,6 +43,20 @@ checks = {
 failed = [name for name, ok in checks.items() if not ok]
 if failed:
     raise SystemExit("FAIL-CLOSED: refusing to build/publish: " + ", ".join(failed))
+
+# Keep the human-readable club labels in the established title case, while the
+# collector's raw CBF names remain untouched in validation-output evidence.
+baseline_path = BASE / ".github/data/serie_a_2026_baseline.csv"
+with baseline_path.open(encoding="utf-8-sig", newline="") as f:
+    baseline = list(csv.DictReader(f))
+labels = {(int(row["round"]), norm(row["home"]), norm(row["away"])): (row["home"], row["away"]) for row in baseline}
+if len(labels) != 380:
+    raise SystemExit("FAIL-CLOSED: cannot canonicalize labels without all 380 baseline fixtures")
+for match in fixtures:
+    label_key = (int(match["round"]), norm(match["home"]), norm(match["away"]))
+    if label_key not in labels:
+        raise SystemExit("FAIL-CLOSED: CBF fixture has no canonical baseline label")
+    match["home"], match["away"] = labels[label_key]
 
 csv_path = BASE / "serie_a_2026_results_verified.csv"
 with csv_path.open("w", encoding="utf-8", newline="") as f:
