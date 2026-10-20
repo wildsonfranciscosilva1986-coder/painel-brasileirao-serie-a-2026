@@ -1,6 +1,8 @@
 name: Validate CBF browser-rendered Série A data (no publication)
 
 on:
+  schedule:
+    - cron: '10 9 * * *' # 06:10 America/Sao_Paulo
   workflow_dispatch:
   repository_dispatch:
     types: [validate-cbf-browser-data]
