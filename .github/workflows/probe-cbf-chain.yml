@@ -2,6 +2,8 @@ name: Probe CBF TLS with verified intermediate
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [probe-cbf-chain]
 
 permissions:
   contents: read
