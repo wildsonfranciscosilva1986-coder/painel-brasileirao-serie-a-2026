@@ -1,0 +1,62 @@
+name: Probe CBF TLS with verified intermediate
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Verify the pinned Sectigo intermediate
+        run: |
+          actual="$(openssl x509 -in certs/sectigo-ov-r36.pem -noout -fingerprint -sha256 | sed 's/.*=//')"
+          expected='65:42:D1:76:BE:D5:0F:19:3C:0C:E2:97:AE:44:EC:D8:A0:A8:6B:EC:2E:DE:68:27:69:34:40:59:B4:E7:85:30'
+          echo "Intermediate SHA-256 fingerprint: $actual"
+          test "$actual" = "$expected"
+          openssl x509 -in certs/sectigo-ov-r36.pem -noout -subject -issuer -dates
+      - name: Test official CBF pages and documented API with hostname and certificate checks enabled
+        run: |
+          python3 - <<'PYCODE'
+          import json, re, ssl, urllib.error, urllib.request
+          cert = 'certs/sectigo-ov-r36.pem'
+          ctx = ssl.create_default_context()
+          ctx.load_verify_locations(cafile=cert)
+          urls = [
+              ('standings', 'https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026'),
+              ('detailed_page', 'https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Tabela%20Detalhada'),
+              ('documented_competitions_api', 'https://campeonatos.cbf.com.br/campeonatos/Campeonato/CampeonatosExercicio?exercicio=2026'),
+              ('documented_matches_api', 'https://campeonatos.cbf.com.br/campeonatos/Jogo/jogosExercicio?Exercicio=2026'),
+          ]
+          page_ok = 0
+          for name, url in urls:
+              req = urllib.request.Request(url, headers={'Accept': 'application/json,text/html,*/*', 'User-Agent': 'brasileirao-dashboard-cbf-tls-probe/1.0'})
+              try:
+                  with urllib.request.urlopen(req, timeout=25, context=ctx) as response:
+                      raw = response.read()
+                      ctype = response.headers.get('content-type', '')
+                      print(f'{name}: HTTP {response.status}; bytes={len(raw)}; content-type={ctype}; hostname and TLS verification=enabled')
+                      if name in ('standings', 'detailed_page'):
+                          text = raw.decode('utf-8', errors='replace')
+                          trs = len(re.findall(r'<tr\b', text, re.I))
+                          print(f'{name}: server-rendered table rows={trs}; embedded full fixture count not assumed')
+                          if response.status == 200 and len(raw) > 10000:
+                              page_ok += 1
+                      else:
+                          try:
+                              data = json.loads(raw)
+                              print(f'{name}: JSON type={type(data).__name__}; rows={len(data) if isinstance(data, list) else "n/a"}')
+                          except Exception:
+                              print(f'{name}: response was not JSON')
+              except Exception as exc:
+                  print(f'{name}: FAILED: {type(exc).__name__}: {str(exc)[:350]}')
+          if page_ok != 2:
+              raise SystemExit(f'Expected both CBF public pages to return HTTP 200 with verified TLS; succeeded={page_ok}/2')
+          print('PASS: both official CBF HTML pages are reachable with certificate and hostname verification enabled.')
+          PYCODE
