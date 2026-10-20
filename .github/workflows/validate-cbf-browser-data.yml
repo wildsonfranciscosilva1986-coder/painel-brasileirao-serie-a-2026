@@ -2,6 +2,8 @@ name: Validate CBF browser-rendered Série A data (no publication)
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [validate-cbf-browser-data]
 
 permissions:
   contents: read
