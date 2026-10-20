@@ -1,6 +1,15 @@
 name: Validate and publish Brasileirão Série A dashboard
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-brazil-dashboard.yml'
+      - '.github/data/serie_a_2026_baseline.csv'
+      - 'certs/sectigo-ov-r36.pem'
+      - 'collect_validate.py'
+      - 'build_validated_dashboard.py'
+      - 'build_serie_a_dashboard.py'
   schedule:
     - cron: '10 9 * * *' # 06:10 America/Sao_Paulo
   workflow_dispatch:
