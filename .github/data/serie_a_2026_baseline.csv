@@ -1,0 +1,381 @@
+round,date,kickoff,home,hg,ag,away,status,cbf_id
+1,2026-01-28,,Atlético-MG,2,2,Palmeiras,finished,
+1,2026-01-28,,Vitória,2,0,Remo,finished,
+1,2026-01-28,,Internacional,0,1,Athletico-PR,finished,
+1,2026-01-28,,Coritiba,0,1,RB Bragantino,finished,
+1,2026-01-28,,Fluminense,2,1,Grêmio,finished,
+1,2026-01-28,,Chapecoense,4,2,Santos,finished,
+1,2026-01-28,,Corinthians,1,2,Bahia,finished,
+1,2026-01-28,,São Paulo,2,1,Flamengo,finished,
+1,2026-01-29,,Mirassol,2,1,Vasco,finished,
+1,2026-01-29,,Botafogo,4,0,Cruzeiro,finished,
+2,2026-02-04,,Flamengo,1,1,Internacional,finished,
+2,2026-02-04,,RB Bragantino,1,0,Atlético-MG,finished,
+2,2026-02-04,,Santos,1,1,São Paulo,finished,
+2,2026-02-04,,Remo,2,2,Mirassol,finished,
+2,2026-02-04,,Palmeiras,5,1,Vitória,finished,
+2,2026-02-04,,Grêmio,5,3,Botafogo,finished,
+2,2026-02-05,,Bahia,1,1,Fluminense,finished,
+2,2026-02-05,,Vasco,1,1,Chapecoense,finished,
+2,2026-02-05,,Cruzeiro,1,2,Coritiba,finished,
+2,2026-02-19,,Athletico-PR,0,1,Corinthians,finished,
+3,2026-02-10,,Vitória,1,2,Flamengo,finished,
+3,2026-02-11,,Mirassol,2,2,Cruzeiro,finished,
+3,2026-02-11,,Chapecoense,3,3,Coritiba,finished,
+3,2026-02-11,,Atlético-MG,3,3,Remo,finished,
+3,2026-02-11,,São Paulo,2,0,Grêmio,finished,
+3,2026-02-11,,Vasco,0,1,Bahia,finished,
+3,2026-02-12,,Athletico-PR,2,1,Santos,finished,
+3,2026-02-12,,Fluminense,1,0,Botafogo,finished,
+3,2026-02-12,,Corinthians,2,0,RB Bragantino,finished,
+3,2026-02-12,,Internacional,1,3,Palmeiras,finished,
+4,2026-02-25,,RB Bragantino,1,1,Athletico-PR,finished,
+4,2026-02-25,,Remo,1,1,Internacional,finished,
+4,2026-02-25,,Coritiba,0,1,São Paulo,finished,
+4,2026-02-25,,Cruzeiro,1,1,Corinthians,finished,
+4,2026-02-25,,Palmeiras,2,1,Fluminense,finished,
+4,2026-02-25,,Grêmio,2,1,Atlético-MG,finished,
+4,2026-02-26,,Santos,2,1,Vasco,finished,
+4,2026-07-17,,Bahia,2,0,Chapecoense,finished,
+4,2026-07-23,,Botafogo,0,0,Vitória,finished,
+4,2026-09-02,,Flamengo,2,0,Mirassol,finished,
+5,2026-03-10,,Mirassol,2,2,Santos,finished,
+5,2026-03-11,,Atlético-MG,1,0,Internacional,finished,
+5,2026-03-11,,Bahia,1,1,Vitória,finished,
+5,2026-03-11,,Corinthians,0,2,Coritiba,finished,
+5,2026-03-11,,Flamengo,2,0,Cruzeiro,finished,
+5,2026-03-12,,Remo,0,2,Fluminense,finished,
+5,2026-03-12,,Vasco,2,1,Palmeiras,finished,
+5,2026-03-12,,São Paulo,2,0,Chapecoense,finished,
+5,2026-03-12,,Grêmio,1,1,RB Bragantino,finished,
+5,2026-03-29,,Athletico-PR,4,1,Botafogo,finished,
+6,2026-03-14,,Vitória,2,0,Atlético-MG,finished,
+6,2026-03-14,,Botafogo,0,3,Flamengo,finished,
+6,2026-03-15,,Internacional,0,1,Bahia,finished,
+6,2026-03-15,,Santos,1,1,Corinthians,finished,
+6,2026-03-15,,Fluminense,3,2,Athletico-PR,finished,
+6,2026-03-15,,Palmeiras,1,0,Mirassol,finished,
+6,2026-03-15,,Coritiba,1,0,Remo,finished,
+6,2026-03-15,,RB Bragantino,1,2,São Paulo,finished,
+6,2026-03-15,,Cruzeiro,3,3,Vasco,finished,
+6,2026-03-16,,Chapecoense,1,1,Grêmio,finished,
+7,2026-03-18,,Bahia,2,0,RB Bragantino,finished,
+7,2026-03-18,,Palmeiras,2,1,Botafogo,finished,
+7,2026-03-18,,Athletico-PR,2,1,Cruzeiro,finished,
+7,2026-03-18,,Atlético-MG,1,0,São Paulo,finished,
+7,2026-03-18,,Mirassol,0,1,Coritiba,finished,
+7,2026-03-18,,Santos,1,2,Internacional,finished,
+7,2026-03-18,,Vasco,3,2,Fluminense,finished,
+7,2026-03-19,,Grêmio,2,0,Vitória,finished,
+7,2026-03-19,,Flamengo,3,0,Remo,finished,
+7,2026-03-19,,Chapecoense,0,0,Corinthians,finished,
+8,2026-03-21,,RB Bragantino,1,2,Botafogo,finished,
+8,2026-03-21,,Fluminense,1,0,Atlético-MG,finished,
+8,2026-03-21,,São Paulo,0,1,Palmeiras,finished,
+8,2026-03-22,,Remo,4,1,Bahia,finished,
+8,2026-03-22,,Athletico-PR,2,0,Coritiba,finished,
+8,2026-03-22,,Vasco,2,1,Grêmio,finished,
+8,2026-03-22,,Cruzeiro,0,0,Santos,finished,
+8,2026-03-22,,Internacional,2,0,Chapecoense,finished,
+8,2026-03-22,,Vitória,1,0,Mirassol,finished,
+8,2026-03-22,,Corinthians,1,1,Flamengo,finished,
+9,2026-04-01,,Internacional,1,1,São Paulo,finished,
+9,2026-04-01,,Botafogo,3,2,Mirassol,finished,
+9,2026-04-01,,Cruzeiro,3,0,Vitória,finished,
+9,2026-04-01,,Bahia,3,0,Athletico-PR,finished,
+9,2026-04-01,,Coritiba,1,1,Vasco,finished,
+9,2026-04-01,,Fluminense,3,1,Corinthians,finished,
+9,2026-04-02,,Santos,2,0,Remo,finished,
+9,2026-04-02,,Chapecoense,0,4,Atlético-MG,finished,
+9,2026-04-02,,Palmeiras,2,1,Grêmio,finished,
+9,2026-04-02,,RB Bragantino,3,0,Flamengo,finished,
+10,2026-04-04,,São Paulo,4,1,Cruzeiro,finished,
+10,2026-04-04,,Coritiba,1,1,Fluminense,finished,
+10,2026-04-04,,Vasco,1,2,Botafogo,finished,
+10,2026-04-05,,Chapecoense,1,1,Vitória,finished,
+10,2026-04-05,,Flamengo,3,1,Santos,finished,
+10,2026-04-05,,Atlético-MG,2,1,Athletico-PR,finished,
+10,2026-04-05,,Bahia,1,2,Palmeiras,finished,
+10,2026-04-05,,Corinthians,0,1,Internacional,finished,
+10,2026-04-05,,Mirassol,0,1,RB Bragantino,finished,
+10,2026-04-05,,Grêmio,0,0,Remo,finished,
+11,2026-04-11,,Remo,1,1,Vasco,finished,
+11,2026-04-11,,Vitória,2,0,São Paulo,finished,
+11,2026-04-11,,Mirassol,1,2,Bahia,finished,
+11,2026-04-11,,Santos,1,0,Atlético-MG,finished,
+11,2026-04-11,,Internacional,0,0,Grêmio,finished,
+11,2026-04-12,,Athletico-PR,2,0,Chapecoense,finished,
+11,2026-04-12,,Botafogo,2,2,Coritiba,finished,
+11,2026-04-12,,Fluminense,1,2,Flamengo,finished,
+11,2026-04-12,,Cruzeiro,2,1,RB Bragantino,finished,
+11,2026-04-12,,Corinthians,0,0,Palmeiras,finished,
+12,2026-04-18,,Vasco,2,1,São Paulo,finished,
+12,2026-04-18,,Chapecoense,1,4,Botafogo,finished,
+12,2026-04-18,,Vitória,0,0,Corinthians,finished,
+12,2026-04-18,,Cruzeiro,2,0,Grêmio,finished,
+12,2026-04-19,,Internacional,1,2,Mirassol,finished,
+12,2026-04-19,,Coritiba,2,0,Atlético-MG,finished,
+12,2026-04-19,,Santos,2,3,Fluminense,finished,
+12,2026-04-19,,RB Bragantino,4,2,Remo,finished,
+12,2026-04-19,,Palmeiras,1,0,Athletico-PR,finished,
+12,2026-04-19,,Flamengo,2,0,Bahia,finished,
+13,2026-04-25,,Botafogo,2,2,Internacional,finished,
+13,2026-04-25,,Bahia,2,2,Santos,finished,
+13,2026-04-25,,Remo,0,1,Cruzeiro,finished,
+13,2026-04-25,,São Paulo,1,0,Mirassol,finished,
+13,2026-04-26,,Corinthians,1,0,Vasco,finished,
+13,2026-04-26,,Grêmio,1,0,Coritiba,finished,
+13,2026-04-26,,RB Bragantino,0,1,Palmeiras,finished,
+13,2026-04-26,,Athletico-PR,3,1,Vitória,finished,
+13,2026-04-26,,Fluminense,2,1,Chapecoense,finished,
+13,2026-04-26,,Atlético-MG,0,4,Flamengo,finished,
+14,2026-05-02,,Botafogo,1,2,Remo,finished,
+14,2026-05-02,,Palmeiras,1,1,Santos,finished,
+14,2026-05-02,,Vitória,4,1,Coritiba,finished,
+14,2026-05-02,,Athletico-PR,0,0,Grêmio,finished,
+14,2026-05-02,,Cruzeiro,1,3,Atlético-MG,finished,
+14,2026-05-03,,Flamengo,2,2,Vasco,finished,
+14,2026-05-03,,São Paulo,2,2,Bahia,finished,
+14,2026-05-03,,Internacional,2,0,Fluminense,finished,
+14,2026-05-03,,Chapecoense,1,2,RB Bragantino,finished,
+14,2026-05-03,,Mirassol,2,1,Corinthians,finished,
+15,2026-05-09,,Coritiba,2,2,Internacional,finished,
+15,2026-05-09,,Fluminense,2,2,Vitória,finished,
+15,2026-05-09,,Bahia,1,2,Cruzeiro,finished,
+15,2026-05-10,,Atlético-MG,1,1,Botafogo,finished,
+15,2026-05-10,,Remo,1,1,Palmeiras,finished,
+15,2026-05-10,,Mirassol,1,1,Chapecoense,finished,
+15,2026-05-10,,Santos,2,0,RB Bragantino,finished,
+15,2026-05-10,,Corinthians,3,2,São Paulo,finished,
+15,2026-05-10,,Grêmio,0,1,Flamengo,finished,
+15,2026-05-10,,Vasco,1,0,Athletico-PR,finished,
+16,2026-05-16,,Internacional,4,1,Vasco,finished,
+16,2026-05-16,,Atlético-MG,3,1,Mirassol,finished,
+16,2026-05-16,,Fluminense,2,1,São Paulo,finished,
+16,2026-05-16,,Palmeiras,1,1,Cruzeiro,finished,
+16,2026-05-17,,Santos,0,3,Coritiba,finished,
+16,2026-05-17,,Bahia,1,1,Grêmio,finished,
+16,2026-05-17,,Botafogo,3,1,Corinthians,finished,
+16,2026-05-17,,Chapecoense,2,3,Remo,finished,
+16,2026-05-17,,RB Bragantino,2,0,Vitória,finished,
+16,2026-05-17,,Athletico-PR,1,1,Flamengo,finished,
+17,2026-05-23,,São Paulo,1,1,Botafogo,finished,
+17,2026-05-23,,Vitória,2,0,Internacional,finished,
+17,2026-05-23,,Grêmio,3,2,Santos,finished,
+17,2026-05-23,,Mirassol,1,0,Fluminense,finished,
+17,2026-05-23,,Flamengo,0,3,Palmeiras,finished,
+17,2026-05-24,,Remo,1,2,Athletico-PR,finished,
+17,2026-05-24,,Cruzeiro,2,1,Chapecoense,finished,
+17,2026-05-24,,Corinthians,1,0,Atlético-MG,finished,
+17,2026-05-24,,Vasco,0,3,RB Bragantino,finished,
+17,2026-05-25,,Coritiba,3,2,Bahia,finished,
+18,2026-05-30,,Flamengo,3,0,Coritiba,finished,
+18,2026-05-30,,Athletico-PR,1,0,Mirassol,finished,
+18,2026-05-30,,Bahia,2,1,Botafogo,finished,
+18,2026-05-30,,Grêmio,1,3,Corinthians,finished,
+18,2026-05-30,,Santos,3,1,Vitória,finished,
+18,2026-05-31,,RB Bragantino,3,1,Internacional,finished,
+18,2026-05-31,,Palmeiras,1,0,Chapecoense,finished,
+18,2026-05-31,,Vasco,0,1,Atlético-MG,finished,
+18,2026-05-31,,Remo,1,0,São Paulo,finished,
+18,2026-05-31,,Cruzeiro,1,1,Fluminense,finished,
+19,2026-07-16,,Vitória,1,0,Vasco,finished,
+19,2026-07-16,,Botafogo,2,1,Santos,finished,
+19,2026-07-17,,Mirassol,2,1,Grêmio,finished,
+19,2026-07-17,,Fluminense,1,1,RB Bragantino,finished,
+19,2026-07-21,,Atlético-MG,1,1,Bahia,finished,
+19,2026-07-22,,Coritiba,1,3,Palmeiras,finished,
+19,2026-07-22,,São Paulo,1,2,Athletico-PR,finished,
+19,2026-07-22,,Internacional,1,2,Cruzeiro,finished,
+19,2026-07-22,,Chapecoense,0,4,Flamengo,finished,
+19,2026-07-23,,Corinthians,3,0,Remo,finished,
+20,2026-07-25,,Santos,2,2,Chapecoense,finished,
+20,2026-07-25,,Athletico-PR,2,0,Internacional,finished,
+20,2026-07-25,,Vasco,1,1,Mirassol,finished,
+20,2026-07-26,,Bahia,1,1,Corinthians,finished,
+20,2026-07-26,,Cruzeiro,0,1,Botafogo,finished,
+20,2026-07-26,,RB Bragantino,0,0,Coritiba,finished,
+20,2026-07-26,,Grêmio,1,1,Fluminense,finished,
+20,2026-07-26,,Flamengo,1,1,São Paulo,finished,
+20,2026-07-26,,Palmeiras,1,2,Atlético-MG,finished,
+20,2026-07-26,,Remo,2,0,Vitória,finished,
+21,TBD,,Chapecoense,,,Vasco,date_tbd,
+21,2026-07-29,,Mirassol,2,1,Remo,finished,
+21,2026-07-29,,Internacional,1,1,Flamengo,finished,
+21,2026-07-29,,Vitória,0,4,Palmeiras,finished,
+21,2026-07-29,,Fluminense,0,0,Bahia,finished,
+21,2026-07-30,,Corinthians,0,0,Athletico-PR,finished,
+21,2026-07-30,,Coritiba,0,1,Cruzeiro,finished,
+21,2026-09-16,,Botafogo,3,2,Grêmio,finished,
+21,2026-10-02,,São Paulo,1,2,Santos,finished,
+21,2026-10-03,,Atlético-MG,1,0,RB Bragantino,finished,
+22,2026-08-08,,Grêmio,2,1,São Paulo,finished,
+22,2026-08-08,,Remo,2,2,Atlético-MG,finished,
+22,2026-08-08,,Coritiba,2,1,Chapecoense,finished,
+22,2026-08-08,,Botafogo,1,1,Fluminense,finished,
+22,2026-08-09,,Cruzeiro,3,1,Mirassol,finished,
+22,2026-08-09,,Bahia,0,0,Vasco,finished,
+22,2026-08-09,,Palmeiras,0,0,Internacional,finished,
+22,2026-08-09,,RB Bragantino,0,2,Corinthians,finished,
+22,2026-08-09,,Santos,0,2,Athletico-PR,finished,
+22,2026-08-09,,Flamengo,2,0,Vitória,finished,
+23,2026-08-15,,Fluminense,3,2,Palmeiras,finished,
+23,2026-08-15,,Athletico-PR,1,1,RB Bragantino,finished,
+23,2026-08-15,,São Paulo,1,1,Coritiba,finished,
+23,2026-08-16,,Chapecoense,3,3,Bahia,finished,
+23,2026-08-16,,Vasco,0,3,Santos,finished,
+23,2026-08-16,,Atlético-MG,3,0,Grêmio,finished,
+23,2026-08-16,,Vitória,1,0,Botafogo,finished,
+23,2026-08-16,,Mirassol,1,5,Flamengo,finished,
+23,2026-08-16,,Corinthians,1,2,Cruzeiro,finished,
+23,2026-08-17,,Internacional,1,1,Remo,finished,
+24,2026-08-22,,Fluminense,2,1,Remo,finished,
+24,2026-08-22,,Internacional,0,0,Atlético-MG,finished,
+24,2026-08-22,,Cruzeiro,2,1,Flamengo,finished,
+24,2026-08-23,,Palmeiras,4,1,Vasco,finished,
+24,2026-08-23,,RB Bragantino,1,0,Grêmio,finished,
+24,2026-08-23,,Vitória,0,2,Bahia,finished,
+24,2026-08-23,,Chapecoense,1,0,São Paulo,finished,
+24,2026-08-23,,Santos,1,1,Mirassol,finished,
+24,2026-08-23,,Coritiba,2,1,Corinthians,finished,
+24,2026-08-24,,Botafogo,2,3,Athletico-PR,finished,
+25,2026-08-29,,Atlético-MG,2,1,Vitória,finished,
+25,2026-08-29,,São Paulo,2,1,RB Bragantino,finished,
+25,2026-08-29,,Vasco,3,1,Cruzeiro,finished,
+25,2026-08-30,,Athletico-PR,3,3,Fluminense,finished,
+25,2026-08-30,,Flamengo,3,0,Botafogo,finished,
+25,2026-08-30,,Corinthians,0,1,Santos,finished,
+25,2026-08-30,,Mirassol,1,1,Palmeiras,finished,
+25,2026-08-30,,Grêmio,3,1,Chapecoense,finished,
+25,2026-08-30,,Bahia,3,2,Internacional,finished,
+25,2026-08-31,,Remo,2,3,Coritiba,finished,
+26,2026-09-05,,RB Bragantino,2,3,Bahia,finished,
+26,2026-09-05,,São Paulo,2,0,Atlético-MG,finished,
+26,2026-09-05,,Fluminense,1,0,Vasco,finished,
+26,2026-09-06,,Coritiba,1,2,Mirassol,finished,
+26,2026-09-06,,Cruzeiro,3,1,Athletico-PR,finished,
+26,2026-09-06,,Internacional,2,3,Santos,finished,
+26,2026-09-06,,Remo,0,1,Flamengo,finished,
+26,2026-09-06,,Botafogo,0,0,Palmeiras,finished,
+26,2026-09-06,,Corinthians,1,2,Chapecoense,finished,
+26,2026-09-07,,Vitória,1,0,Grêmio,finished,
+27,2026-09-11,,Coritiba,3,3,Athletico-PR,finished,
+27,2026-09-12,,Atlético-MG,3,1,Fluminense,finished,
+27,2026-09-12,,Grêmio,1,2,Vasco,finished,
+27,2026-09-12,,Chapecoense,1,2,Internacional,finished,
+27,2026-09-12,,Palmeiras,2,0,São Paulo,finished,
+27,2026-09-12,,Botafogo,1,1,RB Bragantino,finished,
+27,2026-09-12,,Santos,2,1,Cruzeiro,finished,
+27,2026-09-13,,Mirassol,2,2,Vitória,finished,
+27,2026-09-13,,Flamengo,2,1,Corinthians,finished,
+27,2026-09-14,,Bahia,2,1,Remo,finished,
+28,2026-09-19,,Atlético-MG,1,1,Chapecoense,finished,
+28,2026-09-19,,Mirassol,2,0,Botafogo,finished,
+28,2026-09-19,,Remo,1,2,Santos,finished,
+28,2026-09-19,,Vasco,5,0,Coritiba,finished,
+28,2026-09-19,,São Paulo,1,0,Internacional,finished,
+28,2026-09-20,,Grêmio,0,0,Palmeiras,finished,
+28,2026-09-20,,Vitória,1,3,Cruzeiro,finished,
+28,2026-09-20,,Corinthians,1,3,Fluminense,finished,
+28,2026-09-20,,Flamengo,2,1,RB Bragantino,finished,
+28,2026-09-20,,Athletico-PR,2,1,Bahia,finished,
+29,2026-10-07,,RB Bragantino,1,1,Mirassol,finished,
+29,2026-10-07,,Internacional,2,1,Corinthians,finished,
+29,2026-10-07,,Remo,1,1,Grêmio,finished,
+29,2026-10-07,,Vitória,4,0,Chapecoense,finished,
+29,2026-10-07,,Botafogo,1,2,Vasco,finished,
+29,2026-10-07,,Cruzeiro,2,0,São Paulo,finished,
+29,2026-10-08,,Santos,2,2,Flamengo,finished,
+29,2026-10-08,,Athletico-PR,2,2,Atlético-MG,finished,
+29,2026-10-08,,Fluminense,4,0,Coritiba,finished,
+29,2026-10-08,,Palmeiras,1,0,Bahia,finished,
+30,2026-10-10,,Vasco,0,0,Remo,finished,
+30,2026-10-10,,São Paulo,2,1,Vitória,finished,
+30,2026-10-11,,Atlético-MG,2,1,Santos,finished,
+30,2026-10-11,,Grêmio,1,1,Internacional,finished,
+30,2026-10-11,,Palmeiras,4,1,Corinthians,finished,
+30,2026-10-11,,Flamengo,1,0,Fluminense,finished,
+30,2026-10-11,,Bahia,1,0,Mirassol,finished,
+30,2026-10-12,,Coritiba,1,1,Botafogo,finished,
+30,2026-10-12,,Chapecoense,1,4,Athletico-PR,finished,
+30,2026-10-12,,RB Bragantino,4,2,Cruzeiro,finished,
+31,2026-10-16,,Mirassol,2,0,Internacional,finished,
+31,2026-10-17,,Botafogo,1,0,Chapecoense,finished,
+31,2026-10-17,,Atlético-MG,1,0,Coritiba,finished,
+31,2026-10-17,,Athletico-PR,0,2,Palmeiras,finished,
+31,2026-10-17,,São Paulo,1,0,Vasco,finished,
+31,2026-10-18,,Grêmio,2,4,Cruzeiro,finished,307
+31,2026-10-18,,Fluminense,1,2,Santos,finished,301
+31,2026-10-18,,Bahia,0,3,Flamengo,finished,309
+31,2026-10-18,,Remo,1,1,RB Bragantino,finished,310
+31,2026-10-19,,Corinthians,,,Vitória,scheduled,
+32,2026-10-23,20:00,Cruzeiro,,,Remo,scheduled,832206
+32,2026-10-24,16:30,Internacional,,,Botafogo,scheduled,832207
+32,2026-10-24,16:30,Vitória,,,Athletico-PR,scheduled,832209
+32,2026-10-24,16:30,Mirassol,,,São Paulo,scheduled,832205
+32,2026-10-24,18:30,Vasco,,,Corinthians,scheduled,832202
+32,2026-10-24,18:30,Palmeiras,,,RB Bragantino,scheduled,832204
+32,2026-10-24,19:30,Chapecoense,,,Fluminense,scheduled,832210
+32,2026-10-24,21:00,Santos,,,Bahia,scheduled,832203
+32,2026-10-26,19:30,Coritiba,,,Grêmio,scheduled,832208
+32,2026-10-26,20:00,Flamengo,,,Atlético-MG,scheduled,832201
+33,2026-10-28,19:30,Fluminense,,,Internacional,scheduled,832211
+33,2026-10-28,19:30,Santos,,,Palmeiras,scheduled,832213
+33,2026-10-28,19:30,RB Bragantino,,,Chapecoense,scheduled,832215
+33,2026-10-28,21:30,Bahia,,,São Paulo,scheduled,832219
+33,2026-10-28,21:30,Remo,,,Botafogo,scheduled,832220
+33,2026-10-29,19:30,Atlético-MG,,,Cruzeiro,scheduled,832216
+33,2026-10-29,20:00,Vasco,,,Flamengo,scheduled,832212
+33,2026-10-29,21:30,Grêmio,,,Athletico-PR,scheduled,832217
+33,2026-10-30,20:00,Corinthians,,,Mirassol,scheduled,832214
+33,2026-10-31,16:00,Coritiba,,,Vitória,scheduled,832218
+34,2026-11-02,20:00,RB Bragantino,,,Santos,scheduled,832225
+34,2026-11-03,19:30,Chapecoense,,,Mirassol,scheduled,832230
+34,2026-11-03,21:30,Internacional,,,Coritiba,scheduled,832227
+34,2026-11-04,19:30,Athletico-PR,,,Vasco,scheduled,832228
+34,2026-11-04,19:30,Flamengo,,,Grêmio,scheduled,832221
+34,2026-11-04,21:30,Botafogo,,,Atlético-MG,scheduled,832222
+34,2026-11-04,21:30,São Paulo,,,Corinthians,scheduled,832223
+34,2026-11-05,19:30,Palmeiras,,,Remo,scheduled,832224
+34,2026-11-05,21:30,Cruzeiro,,,Bahia,scheduled,832226
+34,2026-11-06,20:00,Vitória,,,Fluminense,scheduled,832229
+35,TBD,,Flamengo,,,Athletico-PR,date_tbd,832231
+35,TBD,,Vasco,,,Internacional,date_tbd,832232
+35,TBD,,São Paulo,,,Fluminense,date_tbd,832233
+35,TBD,,Corinthians,,,Botafogo,date_tbd,832234
+35,TBD,,Mirassol,,,Atlético-MG,date_tbd,832235
+35,TBD,,Cruzeiro,,,Palmeiras,date_tbd,832236
+35,TBD,,Grêmio,,,Bahia,date_tbd,832237
+35,TBD,,Coritiba,,,Santos,date_tbd,832238
+35,TBD,,Vitória,,,RB Bragantino,date_tbd,832239
+35,TBD,,Remo,,,Chapecoense,date_tbd,832240
+36,TBD,,Fluminense,,,Mirassol,date_tbd,832241
+36,TBD,,Botafogo,,,São Paulo,date_tbd,832242
+36,TBD,,Santos,,,Grêmio,date_tbd,832243
+36,TBD,,Palmeiras,,,Flamengo,date_tbd,832244
+36,TBD,,RB Bragantino,,,Vasco,date_tbd,832245
+36,TBD,,Atlético-MG,,,Corinthians,date_tbd,832246
+36,TBD,,Internacional,,,Vitória,date_tbd,832247
+36,TBD,,Athletico-PR,,,Remo,date_tbd,832248
+36,TBD,,Bahia,,,Coritiba,date_tbd,832249
+36,TBD,,Chapecoense,,,Cruzeiro,date_tbd,832250
+37,TBD,,Fluminense,,,Cruzeiro,date_tbd,832251
+37,TBD,,Botafogo,,,Bahia,date_tbd,832252
+37,TBD,,São Paulo,,,Remo,date_tbd,832253
+37,TBD,,Corinthians,,,Grêmio,date_tbd,832254
+37,TBD,,Mirassol,,,Athletico-PR,date_tbd,832255
+37,TBD,,Atlético-MG,,,Vasco,date_tbd,832256
+37,TBD,,Internacional,,,RB Bragantino,date_tbd,832257
+37,TBD,,Coritiba,,,Flamengo,date_tbd,832258
+37,TBD,,Vitória,,,Santos,date_tbd,832259
+37,TBD,,Chapecoense,,,Palmeiras,date_tbd,832260
+38,TBD,,Flamengo,,,Chapecoense,date_tbd,832261
+38,TBD,,Vasco,,,Vitória,date_tbd,832262
+38,TBD,,Santos,,,Botafogo,date_tbd,832263
+38,TBD,,Palmeiras,,,Coritiba,date_tbd,832264
+38,TBD,,RB Bragantino,,,Fluminense,date_tbd,832265
+38,TBD,,Cruzeiro,,,Internacional,date_tbd,832266
+38,TBD,,Grêmio,,,Mirassol,date_tbd,832267
+38,TBD,,Athletico-PR,,,São Paulo,date_tbd,832268
+38,TBD,,Bahia,,,Atlético-MG,date_tbd,832269
+38,TBD,,Remo,,,Corinthians,date_tbd,832270

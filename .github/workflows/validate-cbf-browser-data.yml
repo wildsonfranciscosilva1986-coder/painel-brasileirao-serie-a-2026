@@ -1,0 +1,40 @@
+name: Validate CBF browser-rendered Série A data (no publication)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Verify and trust only the pinned CBF intermediate
+        run: |
+          actual="$(openssl x509 -in certs/sectigo-ov-r36.pem -noout -fingerprint -sha256 | sed 's/.*=//')"
+          expected='65:42:D1:76:BE:D5:0F:19:3C:0C:E2:97:AE:44:EC:D8:A0:A8:6B:EC:2E:DE:68:27:69:34:40:59:B4:E7:85:30'
+          test "$actual" = "$expected"
+          sudo install -m 0644 certs/sectigo-ov-r36.pem /usr/local/share/ca-certificates/cbf-sectigo-ov-r36.crt
+          sudo update-ca-certificates
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Playwright and Chromium
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Collect all fixtures from the rendered CBF pages and validate
+        run: python collect_validate.py
+      - name: Preserve validation evidence, including on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbf-browser-validation-${{ github.run_id }}
+          path: validation-output/
+          if-no-files-found: warn
+          retention-days: 30
