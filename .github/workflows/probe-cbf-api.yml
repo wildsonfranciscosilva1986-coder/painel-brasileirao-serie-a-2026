@@ -1,0 +1,44 @@
+name: Probe official CBF API (TLS)
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [probe-cbf-api]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe documented official CBF API endpoints with TLS verification
+        run: |
+          python3 - <<'PYCODE'
+          import json, ssl, urllib.request
+          base = 'https://campeonatos.cbf.com.br'
+          endpoints = [
+              ('seasoo_competitions', base + '/campeonatos/Campeonato/CampeonatosExercicio?exercicio=2026'),
+              ('season_matches', base + '/campeonatos/Jogo/jogosExercicio?Exercicio=2026'),
+          ]
+          ctx = ssl.create_default_context()
+          failures = []
+          for name, url in endpoints:
+              req = urllib.request.Request(url, headers={'Accept': 'application/json', 'User-Agent': 'brasileirao-dashboard-cbf-api-probe/1.0'})
+              try:
+                  with urllib.request.urlopen(req, timeout=25, context=ctx) as response:
+                      raw = response.read()
+                      data = json.loads(raw)
+                      if not isinstance(data, list):
+                          raise ValueError(f'expected JSON array, got {type(data).__name__}')
+                      print(f'{name}: HTTP {response.status}; JSON rows={len(data)}; bytes={len(raw)}; TLS verification=enabled')
+                      if data:
+                          print(f'{name}_sample_keys: {sorted(data[0].keys())}')
+                          print(f'{name}_sample: {json.dumps(data[0], ensure_ascii=False)[:1200]}')
+              except Exception as exc:
+                  print(f'{name}: FAILED with TLS verification enabled: {type(exc).__name__}: {exc}')
+                  failures.append(name)
+          if failures:
+              raise SystemExit('Official CBF API probe failed for: ' + ', '.join(failures))
+          PYCODE
